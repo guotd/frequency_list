@@ -29,15 +29,15 @@ cat lem | xxd -p | tr -d '\n' | sed 's/0d0a20202020/3d/g' | xxd -r -p > word_var
 
 参考
 ============
-*开源的另一个词频统计脚步：https://github.com/Enaunimes/freeq<br/>
-*获取停词列表：http://www.ranks.nl/stopwords<br/>
-*变体词：http://wordlist.aspell.net/12dicts-readme/<br/>
+* 开源的另一个词频统计脚步：https://github.com/Enaunimes/freeq<br/>
+* 获取停词列表：http://www.ranks.nl/stopwords<br/>
+* 变体词：http://wordlist.aspell.net/12dicts-readme/<br/>
 
 杂项MISC
 ============
-运行环境：依赖GNU command line tools(grep, awk, sed, etc.)<br/>
-使用
+* 运行环境：依赖GNU command line tools(grep, awk, sed, etc.)<br/>
+* 使用
 ```Bash
 ./frequence_list.sh -i <input_file> -o <output_file>
 ```
-License：BSD-2-Clause license
+* License：BSD-2-Clause license
