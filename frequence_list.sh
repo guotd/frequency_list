@@ -22,7 +22,7 @@ while getopts :i:o:h opt; do
     esac
   done
 
-if [ "$input_file" = "" -o ! -f "$input_file" -o ! -f "$STOP_WORD_FILE" -o ! -f "$output_file" ]; then
+if [ "$input_file" = "" -o ! -f "$input_file" -o ! -f "$STOP_WORD_FILE" -o -z "$output_file" ]; then
   help
   exit 1
 fi
